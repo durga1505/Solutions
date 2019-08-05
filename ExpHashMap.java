@@ -29,10 +29,8 @@ public class ExpHashMap
 				{
 					map.put(s.charAt(j),1);
 					arrl.add(s.charAt(j));
-				}
-					
+				}	
 			}
-			
 			int val = 0;
 			for(int p=0;p<arrl.size();p++)
 			{
@@ -40,18 +38,14 @@ public class ExpHashMap
 				val = val+map.get(arrl.get(p));
 				
 			}
-			//System.out.println(val);
 			if(i==0)
 				min = val;
 			else
 			{
 				if(min>val)
-				{
 					min=val;
-				}
 			}
 		}
 		System.out.println(min);
-		
 	}
 }
